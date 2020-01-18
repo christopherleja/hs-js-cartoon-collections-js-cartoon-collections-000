@@ -17,7 +17,6 @@ function summonCaptainPlanet(planeteerCalls){
 
 
 function longPlaneteerCalls(words) {
-  var assortedWords = [];
   for (let i=0; i<words.length; i++){
     if (words[i].length > 4)
     return true
@@ -28,10 +27,18 @@ function longPlaneteerCalls(words) {
 function findTheCheese (foods) {
   for (let i=0; i<foods.length; i++) {
   
-  if (foods[i] === "cheddar" || foods[i] === "gouda" || foods[i] === "camembert") {
+  if (foods[i] === "cheddar" || foods[i] === "gouda" || foods[i] === "camembert" || foods[i] === 'swiss') {
   return foods[i];
   } 
 } 
 return "no cheese!";
 }
 
+function wordsWithB (words) {
+  var wordsThatStartWithB = [];
+  for (let i=0; i,words.length; i++){
+  if (words[i][0] === 'b')  {  
+    wordsThatStartWithB.push(words[i])}
+}
+return wordsThatStartWithB
+}
